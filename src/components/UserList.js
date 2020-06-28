@@ -1,24 +1,24 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 
-const UserList = () => {
+const UserList = ({baseUrl}) => {
 
-    const [users, SetUsers] = useState([])
+    const [users, setUsers] = useState([])
+    const url = `${baseUrl}/users`
 
     useEffect(() => {
-
-        axios.get('https://phone-usage-monitor.herokuapp.com/users')
-        .then(res => {
-            const newUser = res.data.userList
-            .map(usr => usr.username)
-
-            SetUsers(newUser)
-        })
-
-    }, [])
+        axios.get(url)
+          .then(res => {
+            const newUsers = res.data.userList
+              .map(obj => obj);
+      
+            setUsers(newUsers);
+          });
+      }, []);
 
     return (
         <div>
+            Users
             <ul>
                 {
                     users.map(user => (
