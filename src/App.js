@@ -10,11 +10,22 @@ function App() {
   return (
     <div className='App'>
       <section>
-        <div className='AppBranding'>
-          <h2>Track Phone Usage</h2>
-          <p>View and add statistics on your phone usage.</p>
-          <p>Control and regulate unnecessary screen time.</p>
-          <p>Say <strong>Yes</strong> to healthy eyes and a healthy life..</p> 
+        <div className='AppBrandingWrapper'>
+          <h2 className='AppBranding'>Track Phone Usage</h2>
+          <div className='FeaturesList'>
+            <span className='FeatureText'>View and add statistics on your phone usage.</span>
+          </div>
+          <div className='FeaturesList'>
+            <span className='FeatureText'>Improve productivity.</span>
+          </div>
+          <div className='FeaturesList'>
+            <span className='FeatureText'>Monitor your screen time.</span>
+          </div>
+          <div className='FeaturesList'>
+            <span className='FeatureText'>Save your eyes.</span>
+          </div>
+          
+          <h4 className='slogan'>Say Yes to a healthy life..</h4> 
          
         </div>
         <div className='LoginFormWrapper'>
@@ -22,6 +33,7 @@ function App() {
           baseUrl={baseUrl} />
         </div>
       </section>
+      <div className='footer'>Designed and developed by Ruvesh.</div>
     </div>
   );
 }
