@@ -1,0 +1,41 @@
+.Login{
+    
+    padding: 50px;
+    text-align: center;
+}
+
+.LoginForm{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.LoginForm input{
+    height: 20px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.Submit{
+    margin: auto;
+    width: 15%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Submit:hover{
+    margin: auto;
+    width: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
