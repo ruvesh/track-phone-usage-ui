@@ -1,0 +1,15 @@
+section{
+    display: flex;
+    height: 100vh;
+}
+.AppBranding{
+    padding-top: 100px;
+    width: 50%;
+    text-align: center;
+}
+.LoginFormWrapper{
+    background: lightsteelblue;
+    width: 50%;
+    border-left: 100px solid rgb(152, 188, 255);
+    border-bottom: 100vh solid transparent;
+}
